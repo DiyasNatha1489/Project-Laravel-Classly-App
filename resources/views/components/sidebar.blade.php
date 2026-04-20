@@ -56,6 +56,11 @@
         padding: 0;
         width: 100%;
     }
+    
+    .navigation-menu a {
+        text-decoration: none;
+        color: #000000;
+    }
 
     .navigation-menu li {
         padding: 15px 75px 15px 15px;
@@ -67,12 +72,7 @@
         background-color: #efe28a;
         border-radius: 8px;
         box-shadow: inset 0.5px 0.5px 1px 1px  rgba(0,0,0,0.3);
-        
-    }
 
-    .navigation-menu li a {
-        text-decoration: none;
-        color: #000000;
     }
 
     .navigation-menu li img {
@@ -95,28 +95,36 @@
     </nav>
     <nav class="navigation-menu">
         <ul>
-            <li>
-                <a href="{{ url('/dashboard') }}">
+            <a href="{{ url('/') }}">
+                <li>
                     <img src="{{ asset('images/dashboard.png') }}" alt="Dashboard">
                     <span>Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <img src="{{ asset('images/attendance.png') }}" alt="Attendance">
-                <span>Attendance</span>
-            </li>
-            <li>
-                <img src="{{ asset('images/dashboard.png') }}" alt="Dashboard">
-                <span>Schedule</span>
-            </li>
-            <li>
-                <img src="{{ asset('images/attendance.png') }}" alt="Attendance">
-                <span>Event</span>
-            </li>
-            <li>
-                <img src="{{ asset('images/dashboard.png') }}" alt="Dashboard">
-                <span>Insight</span>
-            </li>
+                </li>
+            </a>
+            <a href="{{ url('/attendance') }}">
+                <li>
+                    <img src="{{ asset('images/attendance.png') }}" alt="Attendance">
+                    <span>Attendance</span>
+                </li> 
+            </a>
+            <a href="{{ url('/schedule') }}">
+                <li>
+                    <img src="{{ asset('images/dashboard.png') }}" alt="Schedule">
+                    <span>Schedule</span>
+                </li>    
+            </a>
+            <a href="{{ url('/event') }}">
+                <li>
+                    <img src="{{ asset('images/attendance.png') }}" alt="Event">
+                    <span>Event</span>
+                </li>    
+            </a>
+            <a href="{{ url('/insight') }}">
+                <li>
+                    <img src="{{ asset('images/dashboard.png') }}" alt="Insight">
+                    <span>Insight</span>
+                </li>    
+            </a>
         </ul>
     </nav>
 </nav>

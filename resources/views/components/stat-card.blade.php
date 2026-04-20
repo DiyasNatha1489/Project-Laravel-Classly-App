@@ -13,6 +13,8 @@
         flex: 1;
         display: flex;
         align-items: center; 
+        box-shadow: 0.5px 0.5px 1px 1px  rgba(0,0,0,0.3);
+
     }
 
     .stat-card img {
